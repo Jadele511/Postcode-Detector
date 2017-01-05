@@ -62,7 +62,7 @@
         <div id="message"> </div>
         <div >
           <label for ="adresss"> Enter your address </label>
-          <input type="text" class="form-control" id="address" name= "address" placeholder="E.g. 1100 4th street, SF, CA" value="8 appleton avenue, san francisco" >
+          <input type="text" class="form-control" id="address" name= "address" placeholder="E.g. 1100 4th street, SF, CA" value=" appleton avenue, san francisco" >
         </div><br>
 
         <button type="submit" class="btn btn-primary" id="submit">Submit</button>
@@ -84,7 +84,7 @@
 
         $.ajax({
 
-            url:"https://maps.googleapis.com/maps/api/geocode/json?address="+ encodeURIComponent($("#address").val())+"&key=AIzaSyC-cIjZK5uvPTwzwUBw6mJ7WdVRMLWWK8w",
+            url:"https://maps.googleapis.com/maps/api/geocode/json?address="+ encodeURIComponent($("#address").val())+"&key=YOUR_API_KEY",
             type: "GET",
             success: function (data){
 
